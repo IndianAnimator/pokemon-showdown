@@ -26,12 +26,17 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		section: "S/V Singles",
 	},
 	{
-		name: "[Gen 9] Random Battle",
-		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
-		mod: 'gen9',
-		team: 'random',
-		bestOfDefault: true,
-		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod'],
+		name: "Rejuvenation OU",
+		desc: `A format that allows for the use of Pokémon from the Rejuvenation fan game, with custom rules and clauses.`,
+		mod: 'rejuv',
+		ruleset: ['Standard', 'Evasion Abilities Clause', 'Sleep Moves Clause', '!Sleep Clause Mod'],
+		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail', 'Tera Blast'],
+	},
+	{
+		name: "Rejuvenation AG",
+		desc: `A format that allows for the use of Pokémon from the Rejuvenation fan game, with custom rules and clauses.`,
+		mod: 'rejuv',
+		ruleset: ['Standard AG'],
 	},
 	{
 		name: "[Gen 9] Unrated Random Battle",

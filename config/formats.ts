@@ -19,24 +19,20 @@ The column value will be ignored for repeat sections.
 
 export const Formats: import('../sim/dex-formats').FormatList = [
 
+
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
-
+	
 	{
 		section: "S/V Singles",
 	},
 	{
-		name: "Rejuvenation OU",
-		desc: `A format that allows for the use of Pokémon from the Rejuvenation fan game, with custom rules and clauses.`,
-		mod: 'rejuv',
-		ruleset: ['Standard', 'Evasion Abilities Clause', 'Sleep Moves Clause', '!Sleep Clause Mod'],
-		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail', 'Tera Blast'],
-	},
-	{
-		name: "Rejuvenation AG",
-		desc: `A format that allows for the use of Pokémon from the Rejuvenation fan game, with custom rules and clauses.`,
-		mod: 'rejuv',
-		ruleset: ['Standard AG'],
+		name: "[Gen 9] Random Battle",
+		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
+		mod: 'gen9',
+		team: 'random',
+		bestOfDefault: true,
+		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod'],
 	},
 	{
 		name: "[Gen 9] Unrated Random Battle",
@@ -241,7 +237,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
-
 	// Champions
 	///////////////////////////////////////////////////////////////////
 
